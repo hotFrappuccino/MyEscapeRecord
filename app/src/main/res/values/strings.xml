@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EscapeRecord</string>
+    <string name="title_home">Home</string>
+    <string name="title_themes">Themes</string>
+    <string name="title_myrecord">My Record</string>
+    <string name="title_settings">Settings</string>
+</resources>

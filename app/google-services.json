@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "825305394564",
+    "firebase_url": "https://escaperecord-c3dcf.firebaseio.com",
+    "project_id": "escaperecord-c3dcf",
+    "storage_bucket": "escaperecord-c3dcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825305394564:android:78962ce1f5000b3b",
+        "android_client_info": {
+          "package_name": "com.example.escaperecord"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825305394564-lr7t3rs4m3orqikhdielgpjb1k8mh5p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9Qa2VlrKZi5Tz6VYfSGxH3zSHHrRJOzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825305394564-lr7t3rs4m3orqikhdielgpjb1k8mh5p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

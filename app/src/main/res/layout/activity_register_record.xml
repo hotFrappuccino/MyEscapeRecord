@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterRecord"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="테마후기등록화면"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_weight="3"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="등록"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/registerbtn"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:id="@+id/esimage"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="테마명"
+            android:layout_toRightOf="@+id/esimage"
+            android:layout_alignParentTop="true"
+            android:id="@+id/themename"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="날짜"
+            android:layout_toRightOf="@+id/esimage"
+            android:layout_below="@+id/themename"
+            android:inputType="date"
+            android:id="@+id/esdate"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/esimage"
+            android:layout_below="@+id/esdate"
+            android:id="@+id/esrank"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5"/>
+
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/esyorn">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성공"
+            android:textSize="20dp"
+            android:id="@+id/success"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fail"
+            android:text="실패"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="걸린 시간 53분 27초 ex)5327"
+        android:inputType="number"
+        android:id="@+id/estime"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="달성률 70% ex)70"
+        android:inputType="number"
+        android:id="@+id/espercent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="힌트 사용 갯수"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:inputType="number"
+            android:text="0"
+            android:id="@+id/eshint"
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hintnote"
+        android:hint="힌트를 사용한 문제"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best"
+        android:textSize="20dp"/>
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:id="@+id/esbest"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Worst"
+        android:textSize="20dp"/>
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:id="@+id/esworst"/>
+
+</LinearLayout>
